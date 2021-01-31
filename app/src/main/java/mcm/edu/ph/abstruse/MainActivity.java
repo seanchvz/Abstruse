@@ -64,7 +64,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()) {
             case R.id.computePay:
                 answer = totalPayout;
-                totalPay.setText("P"+Double.toString(answer)+ "" );
+                totalPay.setText("Total Wage: PHP "+Double.toString(answer)+
+                        "\nHours Rendered: "+Double.toString(workingHours)+
+                        "\nHours in Overtme: "+Double.toString(overtimePayFormula1)+
+                        "\nWage in Overtime: PHP "+Double.toString(overtimePayFormula2));
+
                 break;
         }
     }
